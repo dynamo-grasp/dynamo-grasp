@@ -8,4 +8,4 @@ This repository provides the codebase for collecting data through simulation. Th
 
 For more information please refer to our [project website](https://sites.google.com/view/dynamo-grasp)
 
-For installation and usage instructions, please refer to the [documentation](https://htmlpreview.github.io/?https://github.com/dynamo-grasp/dynamo-grasp/blob/working_branch/docs/build/html/index.html)
+For installation and usage instructions, please refer to the [documentation](https://htmlpreview.github.io/?https://github.com/dynamo-grasp/dynamo-grasp/blob/master/docs/build/html/index.html)
