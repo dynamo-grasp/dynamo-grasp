@@ -19,7 +19,7 @@ conda activate myenv
 ```
 
 ## Pip installation
-To initiate your journey with DYNAMO GRASP, use pip for installation:
+To initiate your journey with DYNAMO-GRASP, use pip for installation:
 
 ```bash
 cd <PATH_TO_YOUR_WORKSPACE>/Dynamo-Grasp
