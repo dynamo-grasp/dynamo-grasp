@@ -1,0 +1,135 @@
+##
+## MIT License
+##
+## Copyright (c) 2020-2021 NVIDIA CORPORATION.
+##
+## Permission is hereby granted, free of charge, to any person obtaining a
+## copy of this software and associated documentation files (the "Software"),
+## to deal in the Software without restriction, including without limitation
+## the rights to use, copy, modify, merge, publish, distribute, sublicense,
+## and/or sell copies of the Software, and to permit persons to whom the
+## Software is furnished to do so, subject to the following conditions:
+##
+## The above copyright notice and this permission notice shall be included in
+## all copies or substantial portions of the Software.
+##
+## THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+## IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+## FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+## THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+## LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+## FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+## DEALINGS IN THE SOFTWARE.##
+world_model:
+  coll_objs:
+    # sphere:
+    #   sphere1:
+    #     radius: 0.1 #5 # meters
+    #     position: [0.4, 0.4, 0.1]
+    #     fix: False
+    cube:
+      # Stand Definition (generated from urdf_parse.py)
+      # Right upright
+      cube1:
+        dims: [0.2298, 0.045, 1.89]
+        pose: [-0.55, 0.6476, 0.9645, -1.0, 0, 0, 0]
+      #Left upright
+      cube2:
+        dims: [0.2298, 0.045, 1.89]
+        pose: [-0.55, -0.6476, 0.9645, -1.0, 0, 0, 0]
+      # Top beam
+      cube3:
+        dims: [0.237, 1.44, 0.096]
+        pose: [-0.55, -0.05, 0.06378, -1.0, 0, 0, 0]
+      # Stand Brace
+      cube7:
+        dims: [0.102, 1.439, 0.4934]
+        pose: [-0.6177, -0.05, 1.555, -1.0, 0, 0, 0]
+      # Cantiliver
+      cube8:
+        dims: [0.726, 0.225, 0.09]
+        pose: [-0.30035, -0.05, -0.0207, -1.0, 0, 0, 0]
+      # Control Box Mount
+      cube9:
+        dims: [0.585, 0.0602, 0.179]
+        pose: [-0.55, 0.6975, 0.7545, -1.0, 0, 0, 0]
+      # Mounting Plate
+      cube10:
+        dims: [0.225, 0.225, 0.0225]
+        pose: [-0.05, -0.05, 0.03579, -1.0, 0, 0, 0]
+
+      # pod collisions below this line -------------------------------------- (see gen_pod_collisions.py)
+      # generating vertical slices
+      cube100:
+        dims: [0.001, 1, 2.5]
+        pose: [1.0914, -0.3997, 0.51497, 0.707, 0.707, 0.0, 0.0]
+      cube101:
+        dims: [0.001, 1, 2.5]
+        pose: [1.0914, -0.1712, 0.5149, 0.707, 0.707, 0.0, 0.0]
+      cube102:
+        dims: [0.001, 1, 2.5]
+        pose: [1.0914, 0.0574, 0.5148, 0.707, 0.707, 0.0, 0.0]
+      cube103:
+        dims: [0.001, 1, 2.5]
+        pose: [1.0914, 0.2859, 0.5148, 0.707, 0.707, 0.0, 0.0]
+      cube104:
+        dims: [0.001, 1, 2.5]
+        pose: [1.0914, 0.5144, 0.5147, 0.707, 0.707, 0.0, 0.0]
+
+      # # generating horizontal slices
+      cube105:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0505, 1.5745, 0.707, 0.707, 0.0, 0.0]
+      cube106:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0504, 1.3523, 0.707, 0.707, 0.0, 0.0]
+      cube107:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0504, 1.2127, 0.707, 0.707, 0.0, 0.0]
+      cube108:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0503, 1.0222, 0.707, 0.707, 0.0, 0.0]
+      cube109:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0502, 0.8699, 0.707, 0.707, 0.0, 0.0]
+#######################################################################
+# 3F bin adjustment
+      cube110:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0502, 0.7556, 0.707, 0.707, 0.0, 0.0]
+      cube111:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0501, 0.5334, 0.707, 0.707, 0.0, 0.0]
+#######################################################################
+      cube112:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0501, 0.4065, 0.707, 0.707, 0.0, 0.0]
+      cube113:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0501, 0.2541, 0.707, 0.707, 0.0, 0.0]
+      cube114:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0500, 0.1271, 0.707, 0.707, 0.0, 0.0]
+      cube115:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.05, -0.0950, 00.707, 0.707, 0.0, 0.0]
+      cube116:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0499, -0.2220, 0.707, 0.707, 0.0, 0.0]
+      cube117:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0499, -0.3744, 0.707, 0.707, 0.0, 0.0]
+      cube118:
+        dims: [1, 1, 0.001]
+        pose: [1.0914, 0.0498, -0.6537, 0.707, 0.707, 0.0, 0.0]
+
+      # center vertical plane
+      cube119:
+        dims: [2.5, 1.1, 0.01]
+        pose: [0.7454, 0.0498, 0.5, 0.0, 0.707, 0.0, 0.707]
+
+      # # flap for F row
+      # cube120:
+      #   dims: [0.035, 1, 0.002]
+      #   pose: [0.5904, 0.0498, 0.74, 0.0, 0.707, 0.0, 0.707]
+#############################################################################
