@@ -1,0 +1,27 @@
+<?xml version="0.0" ?>
+<robot name="model.urdf">
+
+	<material name="green">
+		<color rgba="0 0.7 0 1"/>
+	</material>
+
+	<link name="baseLink">
+		<inertial>
+			<mass value="0.592"/>
+			<inertia  ixx="0.000597" ixy="0.00"  ixz="0.00" iyy="0.000597" iyz="0.00" izz="0.000481" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<cylinder length="0.135" radius="0.0403"/>
+			</geometry>
+			<material name="green"/>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<cylinder length="0.135" radius="0.0403"/>
+			</geometry>
+		</collision>
+	</link>
+</robot>

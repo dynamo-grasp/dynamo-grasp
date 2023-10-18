@@ -476,10 +476,7 @@ torch.cuda.empty_cache()
 seconds = time.time()
 local_time = time.ctime(seconds)
 
-try:
-    os.mkdir("src/models/" + str(folder_name))
-except:
-    pass
+os.makedirs("src/checkpoints/" + str(folder_name), exist_ok=True)
 
 total_params = sum(p.numel() for p in model.parameters())
 logger.info(f"Number of parameters: {total_params}")
@@ -623,7 +620,7 @@ for epoch in range(epochs):
                 "optimizer_state_dict": optimizer.state_dict(),
                 "loss": epoch_loss,
             },
-            "src/models/"
+            "src/checkpoints/"
             + str(folder_name)
             + "/checkpoint_"
             + str(local_time)
@@ -631,7 +628,7 @@ for epoch in range(epochs):
         )
 
         save_dir_json = (
-            "src/models/"
+            "src/checkpoints/"
             + str(folder_name)
             + "/checkpoint_"
             + str(local_time)

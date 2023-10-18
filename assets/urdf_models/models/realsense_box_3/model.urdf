@@ -1,0 +1,27 @@
+<?xml version="0.0" ?>
+<robot name="model.urdf">
+
+	<material name="navy_blue">
+		<color rgba="0 0.18 0.42 1"/>
+	</material>
+
+	<link name="baseLink">
+		<inertial>
+			<mass value="0.120"/>
+			<inertia  ixx="0.0001192" ixy="0.00"  ixz="0.00" iyy="0.0002993" iyz="0.00" izz="0.0003644" />
+		</inertial>
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.165 0.096 0.052"/>
+			</geometry>
+			<material name="navy_blue"/>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0"/>
+			<geometry>
+				<box size="0.165 0.096 0.052"/>
+			</geometry>
+		</collision>
+	</link>
+</robot>

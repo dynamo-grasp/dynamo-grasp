@@ -315,7 +315,7 @@ class inference:
     def run_model(self, depth_image, segmask, id):
         self.model.load_state_dict(
             torch.load(
-                "model/dynamo_grasp_model.pth",
+                "inference/model/dynamo_grasp_model.pth",
                 map_location=device,
             )["model_state_dict"]
         )

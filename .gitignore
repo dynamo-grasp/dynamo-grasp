@@ -12,8 +12,8 @@ __pycache__/
 docs/build/doctrees/
 
 # Ignore data directory (typically contains data and model files)
-data/
-models/
+gqcnn/models/
+training/src/checkpoints/
 wandb/
 
 # Ignore log files
