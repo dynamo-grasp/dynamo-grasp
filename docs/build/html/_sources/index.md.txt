@@ -5,7 +5,7 @@ Welcome to the documentation for DYNAMO GRASP! Here, you will find all the neces
 
 ```{note}
 For more information on the research overview and results, visit [our project page](https://sites.google.com/view/dynamo-grasp). <br/>
-For source code, visit our [GitHub repository](https://github.com/bolingy/Dynamo-Grasp.git).
+For source code, visit our [GitHub repository](https://github.com/dynamo-grasp/dynamo-grasp).
 ```
 
 DYNAMO GRASP introduces a novel approach to suction grasp point detection, combining physics-based simulation and data-driven modeling to enhance a robot's grasping capabilities. This method, proven through comprehensive evaluations, demonstrates remarkable adaptability to complex and unexpected object dynamics, offering robust generalization to real-world challenges.

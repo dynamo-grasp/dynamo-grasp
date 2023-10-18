@@ -4,10 +4,10 @@
 The DYNAMO-GRASP project has been tested on Ubuntu 20.04 with Python 3.8 and CUDA 11.8.0.
 
 ## Clone the repository
-[GitHub repository link](https://github.com/bolingy/Dynamo-Grasp) <br/>
+[GitHub repository link](https://github.com/dynamo-grasp/dynamo-grasp) <br/>
 Clone the repository using the following command:
 ```bash
-git clone https://github.com/bolingy/Dynamo-Grasp.git
+git clone https://github.com/dynamo-grasp/dynamo-grasp
 ```
 
 ## Conda Environment Setup
