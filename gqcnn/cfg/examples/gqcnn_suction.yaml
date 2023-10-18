@@ -34,7 +34,7 @@ policy:
   # metric params
   metric:
     type: gqcnn
-    gqcnn_model: models/GQCNN-3.0
+    gqcnn_model: models/GQCNN-3.0/GQ-Suction
 
     crop_height: 96
     crop_width: 96

@@ -28,7 +28,7 @@ class dexnet3:
         self.camera_intr = cam_intr
         self.config_filename = cur_path + "/../cfg/examples/gqcnn_suction.yaml"
         self.model_dir = cur_path + "/../models"
-        self.model_name = "GQCNN-3.0"
+        self.model_name = "GQCNN-3.0/GQ-Suction"
         self.logger = Logger.get_logger(
             cur_path + "/../examples/policy_for_training.py"
         )
