@@ -1,0 +1,20 @@
+# Pre-Trained Models
+
+## GQCNN (DexNet 3.0)
+Download the pre-trained GQCNN model from this link: [GQCNN-3.0](http://bit.ly/3XxKVro) <br/>
+Extract and paste the GQCNN-3.0 folder in the `gqcnn/gqcnn/models` directory of the project.
+
+## DYNAMO-GRASP pre-trained model
+Download the pre-trained DYNAMO-GRASP model from this link: [DYNAMO-GRASP](https://drive.google.com/file/d/1IBsRa-HHxPB-BSxp7RleWrK8H49CPEjh/view?usp=sharing) <br/>
+Paste the model in the `training/model` directory of the project.
+
+```{note}
+The pre-trained model is already present in the `training/model` directory of the project for DYNAMO-GRASP model.
+```
+
+## Inference
+To run the inference on the pre-trained models, use the following command:
+```bash
+cd training
+python inference/dynamo_grasp_policy.py
+```
