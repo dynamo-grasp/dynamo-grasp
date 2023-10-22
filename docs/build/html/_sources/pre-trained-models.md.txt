@@ -1,12 +1,12 @@
 # Pre-Trained Models
 
 ## GQCNN (DexNet 3.0)
-Download the pre-trained GQCNN model from this link: [GQCNN-3.0](http://bit.ly/3XxKVro) <br/>
+Download the pre-trained GQCNN model from this link: [DexNet Models](http://bit.ly/3XxKVro) <br/>
 Establish a new directory under `gqcnn/models`. <br/>
 ```
 mkdir gqcnn/models
 ```
-Extract and paste the GQCNN-3.0 folder in the `gqcnn/models` directory of the project.
+Extract and paste the `GQCNN-3.0` folder in the `gqcnn/models` directory of the project.
 
 ## DYNAMO-GRASP pre-trained model
 Download the pre-trained DYNAMO-GRASP model from this link: [DYNAMO-GRASP](https://drive.google.com/file/d/1IBsRa-HHxPB-BSxp7RleWrK8H49CPEjh/view?usp=sharing) <br/>
