@@ -103,7 +103,6 @@ setup(
     author_email="soofiyan2910@gmail.com, bolingy@uw.edu, grotz@uw.edu",
     maintainer="Soofiyan Atar",
     maintainer_email="soofiyan2910@gmail.com",
-    description="Project code for running Data Collection using Isaac GYM simulator",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
     license="MIT",
